@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoClases y Pseudoelementos</title>
+    <style>
+        div{
+                background-color: beige;
+                color: brown;
+        }
+        /*PSEUDOCLASES (:) */
+        div:hover {
+            background-color: red;
+            color: beige;
+        }
+        input:focus {
+            background-color: blue;
+            color: aqua;
+        }
+        input:required {
+            background-color: violet;
+            color: white;
+        }
+        /* PSEUDOELEMENTOS (::) */
+        .cuadro {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            float: left;
+            border: 1px solid green;
+        }
+        .cuadro:first-child {
+            background-color: papayawhip;
+        }
+        .cuadro:last-child {
+            background-color: orange;
+        }
+        .cuadro:nth-child(odd) {
+            background-color: red;
+        }
+        p::first-letter {
+            color: violet;
+        }
+        p::after {
+            content: '❤️';
+        }
+    </style>
+</head>
+<body>
+    <div>ESTE ES UN DIV</div>
+    <div>ESTE ES UN DIV</div>
+    <div>ESTE ES UN DIV</div>
+    <input type="text" name="" id="" required>
+    <input type="text" name="" id="">
+    <input type="text" name="" id="">
+    <div class="container">
+        <div class="cuadro">DIV 1</div>
+        <div class="cuadro">DIV 2</div>
+        <div class="cuadro">DIV 3</div>
+        <div class="cuadro">DIV 4</div>
+        <div class="cuadro">DIV 5</div>
+        <div class="cuadro">DIV 6</div>
+    </div> 
+    <p>parrafos</p>
+    <p>parrafos</p>
+    <p>parrafos</p>
+</body>
+</html>
